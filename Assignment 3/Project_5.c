@@ -3,13 +3,16 @@
 #include<stdio.h>
 
 void main(){
-	int num,sum=0,remainder,i;
-	
-	printf("Enter the Number : ");
-	scanf("%d",&num);
-	
-	for(i=1;i<num;i++){
-		remainder=num%
-	}
-	
+    int num, sum = 0, remainder;
+
+    printf("Enter the Number : ");
+    scanf("%d", &num);
+
+    while(num > 0){
+        remainder = num % 10;
+        sum += remainder;
+        num = num / 10;
+    }
+
+    printf("The Sum of the digits is : %d", sum);
 }
